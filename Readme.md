@@ -45,11 +45,19 @@ If you do not have golang installed on your Ubuntu 17.10 system:
  - Create the directory $GOPATH/src/github.com/bbqbailey/westminsterChimes
 
 Issue the following commands:
+
  - cd $GOPATH/src/github.com/bbqbailey/westminsterChimes  (note: this changes your working directory to that needed for this program)
+
  - go get github.com/bbqbailey/westminsterChimes  (note: this places the playWestminsterFile and the associated chimes mp3 files into this directory)
+
+ - <editor, e.g., vim> playWestminsterFile.go     (note: repleace "<CHANGE TO YOUR USERNAME!>" with your own home location!)
+
  - go build playWestminsterFile.go (note: this produces your executable playWestminsterFile program)
+
  - chmod 744 playWestminsterFile program) (note: this makes your program executable by you; refer to 'man chmod' if you desire different access)
+
  - ./playWestminsterFileprogram -fileName=westminsterHour.mp3  (note: this will test your installation and build
+
  - crontab -e (this opens your personal crontab for you to edit.  Refer to 'man crontab' if you desire to run as root or other entity.  
 
 
